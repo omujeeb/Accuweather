@@ -9,7 +9,6 @@ const api = {
 const NavHeader = ({ onWeatherChange }) => {
 
   const [search, setSearch] = useState("");
-  // const [weather, setWeather] = useState({});
 
   const searchPressed = () => {
     fetch(`${api.base}weather?q=${search}&units=metric&APPID=${api.key}`)
