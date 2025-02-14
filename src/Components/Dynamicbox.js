@@ -3,12 +3,10 @@ const Dynamicbox = ({ weather }) => {
 
   return (
     <div className="weather-card">
-      {/* Header */}
       <div className="weather-header">
         <span>Today Weather</span>
       </div>
 
-      {/* Main Weather Info */}
       <div className="weather-main">
         <div className="weather-temp">
 
@@ -18,10 +16,8 @@ const Dynamicbox = ({ weather }) => {
 
       </div>
 
-      {/* Weather Description */}
       <div className="weather-description">{weather?.description}</div>
 
-      {/* Weather Details Grid */}
       <div className="weather-details">
         <div><span>Wind</span><span>{weather?.wind?.speed}mph</span></div>
         <div><span>Probability of Thunderstorms</span><span>{weather?.main?.temp}%</span></div>
